@@ -27,7 +27,7 @@ jobs:
           end'
 
   test:
-    runs-on: latest-ubuntu
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: julia-actions/setup-julia@v1
