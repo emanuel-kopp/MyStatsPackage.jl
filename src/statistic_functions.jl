@@ -1,5 +1,6 @@
 #---
 function rse_sum(x)
+    @assert all(!isnan, x) "NaN present in data"
     +(x...)
 end
 
