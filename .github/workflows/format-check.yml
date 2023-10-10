@@ -26,13 +26,11 @@ jobs:
               exit(1)
           end'
 
-jobs:
   test:
     runs-on: latest-ubuntu
-    strategy:
-      matrix:
-        julia-version: '1.9'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: julia-actions/setup-julia@v1
+        with:
+          version: '1.9'
       - uses: julia-actions/julia-runtest@v1
