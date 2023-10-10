@@ -5,6 +5,7 @@ version = "0.1.0"
 
 [deps]
 Example = "7876af07-990d-54b4-ab0e-23690620f79a"
+JuliaFormatter = "98e50ef6-434e-11e9-1051-2b60c6c9e899"
 ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
 
 [compat]

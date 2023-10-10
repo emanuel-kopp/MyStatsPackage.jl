@@ -8,21 +8,21 @@ rse_sum(1:36) == 666
 
 #---
 function rse_mean(x)
-    rse_sum(x)/length(x)
+    rse_sum(x) / length(x)
 end
 
 rse_mean(-15:17) == 1
 
 #---
 function rse_std(x)
-    sqrt(sum((x.-rse_mean(x)).^2) /(length(x)-1))
+    sqrt(sum((x .- rse_mean(x)) .^ 2) / (length(x) - 1))
 end
 
 rse_std(1:3)
 
 #---
 function rse_tstat(x; σ = rse_std(x))
-    rse_mean(x)/ (σ / sqrt(length(x)))
+    rse_mean(x) / (σ / sqrt(length(x)))
 end
 
 rse_tstat(2:3)
@@ -37,7 +37,7 @@ struct StatResult2
     tvalue::Float64
 end
 
-function  StatResult2(x)
+function StatResult2(x)
     n = length(x)
     std = rse_std(x)
     tvalue = rse_tstat(x)
