@@ -1,4 +1,31 @@
 #---
+"""
+    rse_sum(V::Vector)
+
+Return the sum of the vector elements
+
+# Arguments
+
+- `V` -- Vector
+
+# Output
+
+A real number representing the sum of the vector elements
+
+# Notes
+This is an exercise and the notes don't make much sense. 
+
+# Examples
+```julia-repl
+julia> rse_sum(1:36)
+666
+julia> rse_sum([3, 4, 7, 9])
+23
+\````
+
+See also [`sum`](@ref)
+
+"""
 function rse_sum(x)
     @assert all(!isnan, x) "NaN present in data"
     +(x...)
