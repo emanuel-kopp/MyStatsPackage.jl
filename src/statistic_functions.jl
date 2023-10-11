@@ -22,7 +22,7 @@ julia> rse_sum(1:36)
 
 julia> rse_sum([3, 4, 7, 9]) 
 23
-\````
+```
 
 """
 function rse_sum(x)
