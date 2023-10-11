@@ -1,3 +1,0 @@
-var documenterSearchIndex = {"docs":
-[{"location":"#Documentation","page":"Home","title":"Documentation","text":"","category":"section"},{"location":"","page":"Home","title":"Home","text":"rse_sum","category":"page"},{"location":"#MyStatsPackage.rse_sum","page":"Home","title":"MyStatsPackage.rse_sum","text":"rse_sum(V::Vector)\n\nReturn the sum of the vector elements\n\nArguments\n\nV – Vector\n\nOutput\n\nA real number representing the sum of the vector elements\n\nNotes\n\nThis is an exercise and the notes don't make much sense. \n\nExamples\n\n```julia-repl julia> rse_sum(1:36)  666\n\njulia> rse_sum([3, 4, 7, 9])  23 ````\n\n\n\n\n\n","category":"function"}]
-}

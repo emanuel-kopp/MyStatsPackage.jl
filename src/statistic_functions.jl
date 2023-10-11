@@ -16,7 +16,7 @@ A real number representing the sum of the vector elements
 This is an exercise and the notes don't make much sense. 
 
 # Examples
-```@example
+```julia-repl
 julia> rse_sum(1:36) 
 666
 
